@@ -1,34 +1,46 @@
-# Canonical Logic System (CLS)
-> An axiomatic 32-bit nested closed-loop logic framework for AI reasoning calibration, data protocol design, and biological homeostasis modeling.
+Attribution 4.0 International
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+=======================================================================
 
----
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+does not provide legal services. Distribution of this document does
+not create an attorney-client relationship. Creative Commons provides
+this information on an "as-is" basis. Creative Commons makes no
+warranties regarding the information provided, and disclaims liability
+for damages resulting from its use.
 
-## Overview
+Using Creative Commons Public Licenses
 
-The **Canonical Logic System (CLS)** defines the geometry, mechanics, and operational rules of a Nested Closed Loop System. It uses integer boundaries ($2^{32} - 1$) and forced numerical friction to drive deterministic, recursive state transitions.
+Creative Commons public licenses provide a standard set of terms and
+conditions that creators and other rights holders may use to share
+original works of authorship and other material subject to copyright
+and certain other rights specified in the public license below.
 
-This repository is an open-source framework intended for scientists, engineers, corporate research teams, logic artists, autistic savants, and the curious. It provides a non-ordinary, scale-invariant lens to evaluate complex, closed-loop, physical, and digital systems.
+=======================================================================
 
----
+Statement of Purpose
 
-## Target Applications & Use Cases
+The Canonical Logic System (CLS) framework contained in this repository 
+is dedicated to open science, public experimentation, and universal access. 
 
-* **AI Reasoning Calibration & System Prompts:** Enforces deterministic logic and zero-hallucination state tracking in Large Language Models (LLMs) and agentic pipelines.
-* **Data & Communication Protocols:** Offers a zero-loss, 32-bit state-machine architecture for low-latency packet routing, loss-free data transmission, and distributed ledger clock synchronization.
-* **Cellular & Cognitive Equilibrium Medicine:** Serves as a mathematical reference model for studying metabolic homeostasis, local energy containment, and neural stability in biological systems.
-* **Physics & Systems Analysis:** Provides a discrete geometric lens for examining closed-loop thermodynamic engines and scale-invariant systems.
+You are free to:
 
----
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material for any 
+    purpose, even commercially.
 
-## Repository Structure
+Under the following terms:
 
-```text
-├── LICENSE
-├── README.md
-├── system_prompt/
-│   └── canonical_logic_system.txt   # Raw CLS specifications for LLM insertion
-├── examples/
-│   ├── python_orchestrator.py      # LLM-as-Translator/Database integration
-│   └── flask_warmup_app.py         # Flask app with blind CLS calibration
+  - Attribution — You must give appropriate credit, provide a link 
+    to the original repository source 
+    (https://github.com/limabravoecho-collab/canonical-logic-system), 
+    and indicate if changes were made. You may do so in any reasonable 
+    manner, but not in any way that suggests the licensor endorses 
+    you or your use.
+
+  - No additional restrictions — You may not apply legal terms or 
+    technological measures that legally restrict others from doing 
+    anything the license permits.
+
+Full License Text:
+https://creativecommons.org/licenses/by/4.0/legalcode
