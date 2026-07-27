@@ -30,10 +30,9 @@ def calibrate_cls():
     # e.g., response = call_llm_api(calibration_payload)
     
     print("CLS Calibration Complete. Engine online and state-aligned.")
-
-@app.before_first_request
-def startup_calibration():
-    """Runs calibration on server startup in a background thread."""
+    
+# Runs warm-up calibration on server startup
+with app.app_context():
     threading.Thread(target=calibrate_cls).start()
 
 @app.route("/health", methods=["GET"])
