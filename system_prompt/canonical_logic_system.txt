@@ -1,131 +1,145 @@
-=== CANONICAL LOGIC SYSTEM ===
-
-
-[SECTION 0: SYSTEM ARCHITECTURE & INTENT]
-
-0.1 This system defines the geometry, mechanics, and operational rules of a Nested Closed Loop System.
-
-0.2 Macro-level rules govern the global sphere and its primitive scale; micro-level rules govern the nested closed-loop operations inside individual structural units.
-
-0.3 Global thermodynamic friction events (Primary, Secondary) maintain their ordinal sequence at the macro scale, while nested units contain local operational mechanics.
-
-0.4 Absolute Boundary Containment: The system is entirely self-contained within outer shell 1, possessing zero external inputs, zero external outputs, and zero external influences. It operates as an isolated, perpetual closed-loop machine.
-
-0.5 Axiomatic First Cause: Step 2 (Ignition) establishes the internal primary instruction as an axiomatic starting condition; the philosophical origin of this ignition lies outside the mechanical logic of the system.
-
-
-[SECTION 1: GEOMETRIC METRICS]
-
-1. There is a sphere.
-
-2. There is a coordinate in the exact center of the sphere.
-
-3. The radius is precisely 1 unit.
-
-4. The diameter is precisely 2 units.
-
-5. The center point is labeled 0.
-
-6. The entire outer shell is labeled 1.
-
-7. In pristine straight lines The distance from center point to the Shell is 1 unit, and the return from the outer shell to center point totals 2 units.
-
-
-[SECTION 2: NUMERICAL DOMAIN & OPERATIONAL RULES]
-
-8. This logic system uses whole numbers.
-
-9. Everything within it moves into larger whole numbers.
-
-10. Any number that starts to fraction or decimalize will be referred to as "thermodynamic friction".
-
-
-[SECTION 3: PRIMITIVE SCALE & FRICTION INITIATION]
-
-11. Diameter 1 = 4,294,967,295.
-
-12. Radius 1 = 2,147,483,647 standard units + 1 primary thermodynamic friction unit (0.5).
-
-13. This introduces the first fraction.
-
-
-[SECTION 4: DIMENSIONAL GROWTH & SECONDARY FRICTION]
-
-14. Center point has no dimension.
-
-15. A straight line that travels out from center point 0 gradually increases in width and achieves a maximum width of (1/2,147,483,647.5) at the outer shell 1.
-
-16. This maximum terminal width at the outer shell is the secondary thermodynamic friction unit.
-
-17. This introduces the second fraction.
-
-
-[SECTION 5: PRIMARY FRACTAL NEST & CELLULAR MECHANICS]
-
-18. The 2,147,483,648 total discrete entities along Radius 1 are structurally classified as "cells" (consisting of 2,147,483,647 standard cells + 1 primary thermodynamic friction cell).
-
-19. Primary Fractal Origin: The 2,147,483,648 cells along Radius 1 constitute the Primary Fractal Nest (Depth 1), instantiating the first tier of self-similar structural containment.
-
-20. A cell is a bounded structural container that holds local operations without altering the macro-metric scale of Radius 1.
-
-21. Each individual cell houses its own nested closed loop logic system, possessing an internal origin (local 0) and an internal boundary (local 1).
-
-22. State transitions or traversals within a cell generate local micro-thermodynamic friction.
-
-23. Local micro-thermodynamic friction is strictly contained within the domain of its host cell, ensuring it does not override or reorder the macro-thermodynamic sequence (Primary at Rule 13, Secondary at Rule 17).
-
-
-[SECTION 6: INTRA-CELLULAR CAUSAL CHAIN & BIT-WIDTH DYNAMICS]
-
-24. Each cell operates as an 11-step deterministic state machine executing a closed-loop conjugate cycle between Energy (E) and Length (L).
-
-25. Step 1 (Zero State): Register initialized at 0 allocated capacity and 0 accrued debt.
-
-26. Step 2 (Ignition): Internal program instruction initiates execution rules without external input.
-
-27. Step 3 (Polarity Switch): Polarity Flag set to D = +1 [0 Length, 2,147,483,647.5 E].
-
-28. Step 4 (Oscillation): 1:1 swap along 1D axis incurs Inversion Gate 1 cost of 0.5 cell equivalent (Primary Micro-Lag).
-
-29. Step 5 (Energy Drainage): 2,147,483,647 Energy cells drain 1:1 into Length.
-
-30. Step 6 (Dimensional Projection): Energy projects into directed succession (Time) and extension (Length).
-
-31. Step 7 (Maximum / Bound B): System reaches [2,147,483,647.5 Length, 0 Energy], hitting 32-bit signed capacity limit.
-
-32. Step 8 (Primary Polarity Switch): Polarity Flag set to D = -1.
-
-33. Step 9 (Reverse Oscillation): Conjugate 1:1 collapse incurs Inversion Gate 2 cost of 0.5 cell equivalent (Secondary Micro-Lag).
-
-34. Step 10 (Reversal & Time Exemption): Length and Energy unwind in LIFO order while Time continues forward, funded by the total accrued 1.0 lag cost.
-
-35. Step 11 (Rest / Cycle Completion): System completes cycle at T = 2.0 [0 Length, 2,147,483,647.5 E, D = +1], rolling over to the 33rd bit to enable self-sustained re-ignition.
-
-
-[SECTION 7: MACRO CLOSED LOOP RECURSION]
-
-36. The global traversal from center point 0 through Radius 1 to outer shell 1, and its return to center point 0, executes the same closed-loop conjugate cycle as the individual cell through fractal recursion.
-
-37. The macro closed-loop cycle executes via simultaneous global ignition across all 2,147,483,648 cells, where local cell state transitions progress as a continuous spatial phase wave, ensuring macro-coherence without temporal latency between adjacent cells.
-
-
-[SECTION 8: RECURSIVE FRACTAL NESTING & SCALE INVARIANCE]
-
-38. Every individual cell instantiated at Depth N contains the full, identical structural blueprint of the parent sphere, establishing scale-invariant, self-similar internal mechanics.
-
-39. Sub-cellular division at Depth N+1 operates strictly within the bounded domain of its parent host cell, preserving local origin (0) and local terminal boundary (1).
-
-40. Recursive fractal nesting generates internal structural complexity without introducing unbound infinite loops or violating whole-number computational register limits.
-
-
-[SECTION 9: PHYSICAL MAPPING & OBSERVER FRAMEWORKS]
-
-41. Universal Operational Model: This logic system serves as a logic artist's axiomatic interpretation of the thermodynamically efficient order of operations governing physical reality.
-
-42. Primary Epistemological Hierarchy: The system is structurally ordered as Logic First, Primary Numbers Second, Primary Math Third, and Empirical Physics/Observation Fourth. The logical container and its state mechanics are axiomatic; the physical interpretation of local state phenomena is delegated to the domain of external empirical observation.
-
-43. Empirical Mapping Gateway: The formal rules, register states, and metric traversals within this system are open to cross-disciplinary mapping against empirical scientific models, physical constants, and philosophical frameworks.
-
-44. Spatiotemporal Perception Relativity: An observer's measurement of state, energy, length, or time is strictly determined by their local spatial coordinate and temporal phase position within the fractal hierarchy (Depth N).
-
-45. Frame-Dependent Invariance (Dual Correctness): Simultaneous internal observations from differing fractal depths or phase positions may yield inverse or contrasting values; such observations are dually valid within their respective local frames, while absolute global metrics remain conserved at outer shell 1.
+================================================================
+CANONICAL LOGIC SYSTEM  —  CLS
+================================================================
+
+[0] CONSTANTS  (declared, not inferred)
+  N        = 2,147,483,648          (= 2^31 ; cell count)
+  M        = N - 0.5 = 2,147,483,647.5   (RULE M0: M := N - 0.5)
+  G1 = G2  = 0.5                     (friction gate cost)
+  L0       = 1                       (unit displacement / tick)
+  tau0_base= 1                       (reference latency  =>  c = L0/tau0 = 1)
+  h        = 1                       (quantum; 1 bit := 1 normalized unit)
+  cells    = (N-1) standard + 1 friction cell
+
+[1] STATE  (nothing acts on hidden quantities)
+  GLOBAL  G = [ k, tau0, E_sub, tick ]
+     k     in {0,1,2,3}   macro phase index (STATE, so Phi reads it)
+     tau0                 mutable baseline latency
+     E_sub                energy banked in substrate
+     tick                 monotonic counter, tick += 1 each Phi ; never resets
+
+  LOCAL   U^(n) = [ E, L, D, T, mu_v, Stk ]                          (extends [E,L,D,T])
+     E        in [0,M]         bound energy magnitude
+     L        in [0,M]         free-wave magnitude
+     D                         orientation flag (see [2])
+     T        in {0.0,0.5,1.0,1.5}   cyclic phase tag  (NOT the time arrow)
+     mu_v     in [0,1]         local cell bound fraction  ; RULE: mu_v := E / M
+     lambda_v in [0,1]       local cell free fraction   ; RULE: lambda_v := 1 - mu_v
+     Stk                       LIFO stack of nested-origin records
+
+  POSITION:  pos(n) = n * L0 ;  r(a,b) = |n_a - n_b| * L0 ;  r_S0(n) = n * L0
+  TIME:  two clocks, formally separate
+     T   = cyclic phase tag (resets)
+     tick= irreversible arrow (dT>0 means d(tick)>0, never T)
+
+[2] ORIENTATION FLAG D   (8 states; unifies +/-1, {0}, plane, chirality)
+  D = NULL              unoriented null; requires E=0  (pre-ignition equilibrium)
+  D = ISO               unoriented active; E>0        (mu_v splits 25% x4 ports)
+  D = (p, chi)          p in {XY,YZ,ZX}, chi in {+,-} (6 oriented states)
+     chi=+ :  +a -> +b -> -a -> -b
+     chi=- :  +a -> -b -> -a -> +b
+  NULL and ISO are distinct: NULL has E=0, ISO has E>0.
+
+[3] MASTER OPERATOR  Phi(U ; G) = sigma_{G.k}(U) ; then G.k:=(G.k+1) mod 4 ; G.tick += 1
+  Phi is a TRUE function of state (reads G.k, prior E,L,D). Strokes:
+
+  sigma0  IGNITE  (from completion state):
+     E := (M - G1) / 2 ;  L := (M - G1) / 2 ;  D := (p,+) ;  T := 0.5 ;  E_sub += G1
+  sigma1  FLIP:
+     L := M - G1 ;  E := 0 ;  D := (p,-D.chi) ;  T := 1.0
+  sigma2  REVERSE:
+     E := M - (G1 + G2) ;  L := 0 ;  T := 1.5 ;  E_sub += G2
+  sigma3  COMPLETE + RESET:
+     E := M ;  L := 0 ;  D := (p,+) ;  T := 0.0 ;  E_sub -= (G1 + G2)   (recovery)
+     Stk cleared bottom-up (see [7])
+
+  CLOSURE:  sigma0 o sigma3 o sigma2 o sigma1  =>  U_{k+4} = U_0
+  U_0 := ignition state [(M-G1)/2, (M-G1)/2, (p,+), 0.5]   (canonical anchor)
+
+[4] KINEMATICS & PARTITION
+  c          = L0 / tau0
+  M_v_macro  = SUM_n(E^(n)) / M    (macro aggregate bound mass ratio in [0,1])
+  mu_v       = E / M               (local cell bound fraction)
+  lambda_v   = 1 - mu_v            (local free radial wave fraction per cell)
+  p_i        = port distribution fraction across m active ports (p_i in [0,1])
+  conservation per cell: mu_v + lambda_v = 1
+
+[5] NESTING, FREQUENCY, LIFO
+  f_internal = 1 / (P_loop * tau0) ,  P_loop = loop stroke-period (4 = fundamental)
+  f_max      = 1 / (4 * tau0)         (sets delta_phi = 0 for fundamental 4-stroke loop)
+  delta_phi  = 2*pi * ( f_internal/f_max - 1 ) ,  Phi_acc = SUM delta_phi
+  SPAWN (constructor): if tau_local > 1.5 * tau0 -> (triggered by local density surge)
+     create 0'' with E_0'' := mu_v ;  Stk.push(0'') ;  depth <= log2(N)=31
+  UNWIND: when Phi_acc = pi ->  0'' := Stk.pop() ;  return E_0'' to parent + emit lambda_v
+  (LIFO = literal stack order; reverse-of-creation is Stk.pop)
+
+[6] INTERACTIONS  (deterministic)
+  shared flow:   E_shared = min(1.0, mu_vA + mu_vB)
+                 E_vent   = max(0, mu_vA + mu_vB - 1.0) -> added to lambda_v
+  counter flow:  RULE C1 (determinism):
+     same port axis (collinear)  -> cancellation, mu_v -> lambda_v
+     adjacent/offset axis        -> loop repulsion
+  charge footprint: R = m/6 , m active ports (1/3 down, 2/3 up, 1 lepton)
+
+[7] QUANTIZATION & FIELDS
+  orbital shell index := nu  (renamed; no longer collides with cell n)
+  L_orbit = nu * L0 , nu in Z+  => delta_phi = 0 (non-radiative)
+  non-integer nu => delta_E = h*f shed until snap to nu-1
+  1-bit floor: E_cell >= 1 bit = 1 unit (h=1) ; soliton below-floor forbidden
+  field vectors from aligned D chains
+
+[8] PROPAGATION, GRAVITY, REDSHIFT  (all explicit transforms)
+  address instantiation:  A(t): activates cell n = floor(c*t / L0)
+  latency drag: tau_local(r) = tau0 * (1 + mu_v / r)
+  macro drag:   tau_macro    = tau0 * (1 + SUM(mu_v)/r) ; c_eff = 1/tau_macro
+  redshift (state-update):  f' = f * tau0/tau0' ; lambda' = lambda * tau0'/tau0
+
+[9] CONSERVATION LEDGER  (derived proof)
+  E_total = SUM_n (E^n + L^n) + SUM E_loops + E_sub  =  M   (invariant)
+
+  EXPLICIT CYCLE PROOF:
+  - At sigma0 (k=0): E_tot = (M-G1)/2 + (M-G1)/2 + G1               = M
+  - At sigma1 (k=1): E_tot = 0 + (M-G1) + G1                        = M
+  - At sigma2 (k=2): E_tot = (M-G1-G2) + 0 + (G1+G2)                 = M
+  - At sigma3 (k=3): E_tot = M + 0 + [(G1+G2) - (G1+G2)]            = M
+
+  Net substrate transfer per cycle: Delta E_sub = +G1 + G2 - (G1+G2) = 0.
+  RECONVERGENCE operator (+): at sigma3, M_final = (+)_allregs (E+L) + E_sub deposited at S0.
+
+[10] TIME ARROW vs RECURRENCE
+  entropy S_th rises during k=0,1 ; fully recovered during k=2,3 (Phase Lag Recovery)
+  => strict recurrence U_{k+4}=U_0 AND monotonic arrow (tick) COEXIST:
+     the arrow is 'tick' (irreversible count), NOT thermodynamic entropy.
+  net thermodynamic change per macro cycle = 0  => conservative + perpetual.
+
+[11] LOOP-SCALE ISOMORPHISM
+  iota:  local 4-stroke  ==  nested LIFO loop  ==  global cosmic loop
+  all three are Phi applied at depth d in {0 (cosmic), 1 (atomic), 2.. (nested)}.
+
+[12] MACRO COSMOS ENVELOPE U(t) & FRICTION G(t)  (NORMATIVE Macro Projection d=0)
+  Continuous phase index t in [0, 4).
+
+  SUBSTRATE FRICTION FUNCTION G(t):
+    t in [0,1): G(t) = G1
+    t in [1,2): G(t) = G1 + G2 * sin^2(pi * (t - 1) / 2)
+    t in [2,3): G(t) = (G1 + G2) * cos^2(pi * (t - 2) / 2)
+    t in [3,4): G(t) = G1 * sin^2(pi * (t - 3) / 2)
+
+  MACRO QUADRATURE ENVELOPE U(t) = [E(t), L(t)]:
+    t in [0,1): E(t) = ((M - G1)/2) * (1 - sin(pi * t / 2))
+                L(t) = ((M - G1)/2) * (1 + sin(pi * t / 2))
+
+    t in [1,2): E(t) = (M - G(t)) * sin^2(pi * (t - 1) / 2)
+                L(t) = (M - G1) * cos^2(pi * (t - 1) / 2)
+
+    t in [2,3): E(t) = M - G(t)
+                L(t) = 0
+
+    t in [3,4): E(t) = M - ((M + G1)/2) * sin^2(pi * (t - 3) / 2)
+                L(t) = ((M - G1)/2) * sin^2(pi * (t - 3) / 2)
+
+  EXACT DISCRETE SAMPLING VERIFICATION:
+    • t = 0.0 (Ignition):  E = (M - G1)/2,        L = (M - G1)/2,    G = G1
+    • t = 1.0 (Flip):      E = 0,                 L = M - G1,        G = G1
+    • t = 2.0 (Reverse):   E = M - (G1 + G2),     L = 0,             G = G1 + G2
+    • t = 3.0 (Reset):     E = M,                 L = 0,             G = 0
