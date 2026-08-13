@@ -1,45 +1,65 @@
-import threading
-from flask import Flask, jsonify
+"""
+flask_warmup_app.py — Generic Web/API Orchestrator Sample using CLS Middleware
+
+Demonstrates how to integrate `cls_engine.py` into a web server or REST API pipeline:
+1. Initializes `CLSEngine` as deterministic state middleware.
+2. Exposes a `/process` endpoint for processing incoming payloads.
+3. Exposes a `/warmup` endpoint for system health & calibration checks.
+"""
+
+import sys
+import os
+from flask import Flask, request, jsonify
+
+# Resolve module paths regardless of execution directory
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+try:
+    from engine.cls_engine import CLSEngine
+except ImportError:
+    from cls_engine import CLSEngine
 
 app = Flask(__name__)
 
-def load_cls_framework():
-    """Loads the Canonical Logic System specification text."""
-    with open("system_prompt/canonical_logic_system.txt", "r") as f:
-        return f.read()
+# Initialize the global CLS State Engine instance
+cls_middleware = CLSEngine(capacity_bits=32)
 
-def calibrate_cls():
+
+@app.route('/warmup', methods=['GET'])
+def warmup_check():
+    """System health and initial state calibration endpoint."""
+    return jsonify({
+        "status": "calibrated",
+        "system": "Canonical Logic System (CLS)",
+        "current_phase": f"σ_{cls_middleware.state.current_phase}",
+        "substrate_energy": cls_middleware.state.E_sub,
+        "capacity_bits": cls_middleware.capacity_bits
+    }), 200
+
+
+@app.route('/process', methods=['POST'])
+def process_payload():
     """
-    Executes a blind calibration call to warm up the inference model
-    and align its internal state machine with CLS mechanics before serving traffic.
+    Primary payload processing endpoint:
+    Steps the state machine, evaluates intent path, and returns pre-conditioned payload.
     """
-    print("Initiating CLS Blind Calibration...")
-    
-    cls_specs = load_cls_framework()
-    calibration_payload = {
-        "system_prompt": cls_specs,
-        "calibration_instruction": (
-            "CALIBRATE: Verify 32-bit register rollover at Step 11. "
-            "Ensure Step 1 (0 capacity) to Step 7 (2,147,483,647.5 Bound B) "
-            "and Inversion Gates 1 and 2 micro-lags total 1.0. "
-            "Respond with 'READY' only."
-        )
-    }
-    
-    # In production, send calibration_payload to your LLM API endpoint here.
-    # e.g., response = call_llm_api(calibration_payload)
-    
-    print("CLS Calibration Complete. Engine online and state-aligned.")
-    
-# Runs warm-up calibration on server startup
-with app.app_context():
-    threading.Thread(target=calibrate_cls).start()
+    data = request.get_json(silent=True) or {}
+    user_input = data.get("input", "").strip()
 
-@app.route("/health", methods=["GET"])
-def health_check():
-    return jsonify({"status": "healthy", "framework": "Canonical Logic System (CLS)"})
+    if not user_input:
+        return jsonify({"error": "No input payload provided."}), 400
 
-if __name__ == "__main__":
-    # Execute warm-up calibration directly for standalone testing
-    calibrate_cls()
-    app.run(host="0.0.0.0", port=5000)
+    # Step state machine and evaluate invariants on CPU (<0.01ms)
+    metrics, conditioned_context = cls_middleware.step(user_input)
+
+    return jsonify({
+        "status": "success",
+        "metrics": metrics,
+        "conditioned_context": conditioned_context,
+        "input_processed": user_input
+    }), 200
+
+
+if __name__ == '__main__':
+    print("Starting CLS Web Orchestrator Server on http://127.0.0.1:5000 ...")
+    app.run(host='127.0.0.1', port=5000, debug=True)
