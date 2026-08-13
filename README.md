@@ -7,28 +7,26 @@
 
 ## Overview
 
-The **Canonical Logic System (CLS)** defines the geometry, mechanics, and operational rules of a Nested Closed Loop System. It uses integer boundaries ($2^{32} - 1$) and forced numerical friction to drive deterministic, recursive state transitions.
+The **Canonical Logic System (CLS)** defines the geometry, mechanics, and operational rules of a Nested Closed-Loop System. It uses integer boundaries ($2^{32} - 1$), $N-0.5$ floating-point friction gates ($G_1, G_2 = 0.5$), and forced substrate energy conservation ($\Delta E_{\text{sub}} = 0$) to drive deterministic, recursive state transitions ($U_{k+4} \equiv U_0$).
 
-This repository is an open-source framework intended for scientists, engineers, corporate research teams, logic artists, autistic savants, and the curious. It provides a non-ordinary, scale-invariant lens to evaluate complex, closed-loop, physical, and digital systems.
-
----
-
-## Target Applications & Use Cases
-
-* **AI Reasoning Calibration & System Prompts:** Enforces deterministic logic and zero-hallucination state tracking in Large Language Models (LLMs) and agentic pipelines.
-* **Data & Communication Protocols:** Offers a zero-loss, 32-bit state-machine architecture for low-latency packet routing, loss-free data transmission, and distributed ledger clock synchronization.
-* **Cellular & Cognitive Equilibrium Medicine:** Serves as a mathematical reference model for studying metabolic homeostasis, local energy containment, and neural stability in biological systems.
-* **Physics & Systems Analysis:** Provides a discrete geometric lens for examining closed-loop thermodynamic engines and scale-invariant systems.
+This repository is an open-source framework intended for computer scientists, systems engineers, corporate research teams, logic artists, autistic savants, and multi-disciplinary researchers. It provides a non-ordinary, scale-invariant lens to evaluate complex, closed-loop physical, biological, and digital systems.
 
 ---
 
-## Repository Structure
+## Key Architecture: Deterministic Hybrid Middleware
+
+While CLS can be ingested directly by Large Language Models (LLMs) as a raw system prompt specification, its highest-performing implementation is as an **executable middleware script** (`cls_engine.py`).
 
 ```text
-├── LICENSE
-├── README.md
-├── system_prompt/
-│   └── canonical_logic_system.txt   # Raw CLS specifications for LLM insertion
-├── examples/
-│   ├── python_orchestrator.py      # LLM-as-Translator/Database integration
-│   └── flask_warmup_app.py         # Flask app with blind CLS calibration
+Visitor Input / Data Packet
+         │
+         ▼
+[ cls_engine.py ]  <-- Deterministic CPU Layer (Python / C)
+         │  • Phase Index Tracking: k (mod 4)
+         │  • Substrate Energy Balance: ΔE_sub = 0
+         │  • Instant Sub-Millisecond Path Classification
+         │  • Hard Invariant / Safety Gate Execution
+         ▼
+[ LLM / Interface ] <-- Generative / Display Layer
+            • Ingests pre-conditioned CLS metrics payload
+            • Synthesizes output in target persona or protocol format
